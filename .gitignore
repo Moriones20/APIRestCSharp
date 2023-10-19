@@ -28,3 +28,6 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+
+#Visual Studio
+.vs

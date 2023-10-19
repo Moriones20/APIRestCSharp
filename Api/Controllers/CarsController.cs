@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
-    public class CarsController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CarsController : ControllerBase
     {
-        private readonly CarRepository _carRepository;
+        private readonly ICarRepository _carRepository;
 
         public CarsController(ICarRepository carRepository)
         {
